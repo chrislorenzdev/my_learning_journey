@@ -98,7 +98,10 @@ body {
   }
 }
 
-.btn-color .wordColor {
+.btn-color.btn-color-switch:active {
+  box-shadow: inset 0.4rem -0.3rem var(--bg-color-4);
+}
+.wordColor {
   color: var(--bg-color-4);
   text-shadow:
     -1px 0 black,

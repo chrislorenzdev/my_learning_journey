@@ -5,6 +5,7 @@ const container = document.getElementById("container");
 const wordColor = document.getElementById("wordColor");
 
 btnColor.addEventListener("click", () => {
+  btnColor.classList.toggle("btn-color-switch");
   if (container.style.backgroundColor === "rgb(0, 0, 255)") {
     container.style.backgroundColor = "rgb(0, 255, 0)";
     container.style.transition = ".8s";
