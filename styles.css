@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+h1 {
+  margin: var(--space-l);
+}
+
+ul {
+  list-style: none;
+  justify-content: flex-start;
+}
+
+a {
+  /* margin: var(--space-3xl); */
+  padding: var(--space-l);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
