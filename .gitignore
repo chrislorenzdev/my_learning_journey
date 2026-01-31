@@ -1,0 +1,4 @@
+# Ignore all ini files everywhere
+**/*.ini
+desktop.ini
+[Dd]esktop.ini
