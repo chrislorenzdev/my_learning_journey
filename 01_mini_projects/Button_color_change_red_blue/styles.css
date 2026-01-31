@@ -1,0 +1,91 @@
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/lato-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/lato-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/lato-v25-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* colors */
+  --color-1: rgb(0, 0, 0);
+  --color-2: rgb(185, 185, 185);
+  --color-3: rgba(255, 255, 255, 0.112);
+  --bg-color-3: rgb(255, 0, 0);
+  --bg-color-4: rgb(0, 0, 255);
+  /* border-radius */
+  --br-main: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-2);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80vh;
+  background-color: var(--bg-color-3);
+  border-radius: var(--br-main);
+}
+
+@media (max-width: 554px) {
+  .description {
+    font-size: 6rem;
+    pointer-events: none;
+  }
+}
+
+.btn-color {
+  font-family: inherit;
+  font-weight: inherit;
+  width: 12rem;
+  padding: 1rem 0.2rem 1rem;
+  border-radius: var(--br-main);
+  transition: 0.4s;
+  cursor: pointer;
+  border: none;
+  background-clip: padding-box;
+  display: inline-block;
+}
+
+.btn-color:hover {
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.wordColor {
+  color: var(--bg-color-4);
+}
