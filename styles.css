@@ -118,6 +118,7 @@ a:hover {
   outline: none;
   background-color: var(--clr-darker);
   box-shadow: inset -1rem -1px var(--clr-accent-lt);
+  transition: all ease-in 0.26s;
 }
 
 a:active {
