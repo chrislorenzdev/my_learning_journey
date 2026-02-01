@@ -30,11 +30,22 @@
   --color-1: rgb(201, 201, 201);
   --color-2: rgb(23, 23, 23);
   --color-3: rgb(59, 59, 59);
-  --bg-color-3: rgb(0, 255, 0);
-  --bg-color-4: rgb(0, 0, 255);
+  --bg-color-3: rgba(33, 164, 33, 0.776);
+  --bg-color-4: rgba(1, 1, 195, 0.7);
   /* border-radius */
   --br-main: 4rem;
 }
+
+/* :root {
+  /* colors */
+/* --color-1: rgb(201, 201, 201); */
+/* --color-2: rgb(23, 23, 23); */
+/* --color-3: rgb(59, 59, 59); */
+/* --bg-color-3: rgb(0, 255, 0); */
+/* --bg-color-4: rgb(0, 0, 255); */
+/* border-radius */
+/* --br-main: 4rem; */
+/* } */
 
 * {
   box-sizing: border-box;
@@ -104,9 +115,10 @@ body {
 .wordColor {
   color: var(--bg-color-4);
   text-shadow:
-    -1px 0 black,
-    0 1px black,
-    1px 0 black,
-    0 -1px black;
+    -1px 0 rgba(255, 255, 255, 0.55),
+    0 1px rgba(255, 255, 255, 0.479),
+    1px 0 rgba(255, 255, 255, 0.349),
+    0 -1px rgba(255, 255, 255, 0.384);
   align-self: flex-end;
+  letter-spacing: 1.5px;
 }

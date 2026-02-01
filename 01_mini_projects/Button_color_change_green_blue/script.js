@@ -6,16 +6,15 @@ const wordColor = document.getElementById("wordColor");
 
 btnColor.addEventListener("click", () => {
   btnColor.classList.toggle("btn-color-switch");
-  if (container.style.backgroundColor === "rgb(0, 0, 255)") {
-    container.style.backgroundColor = "rgb(0, 255, 0)";
+  if (container.style.backgroundColor === "rgba(1, 1, 195, 0.7)") {
+    container.style.backgroundColor = "rgba(33, 164, 33, 0.776)";
     container.style.transition = ".8s";
     wordColor.textContent = "Blue";
-    wordColor.style.color = "rgb(0, 123, 255)";
-    wordColor.style.letterSpacing = "1.5px";
+    wordColor.style.color = "rgba(1, 1, 195, 0.7)";
   } else {
-    container.style.backgroundColor = "rgb(0, 0, 255)";
+    container.style.backgroundColor = "rgba(1, 1, 195, 0.7)";
     container.style.transition = ".8s";
     wordColor.textContent = "Green";
-    wordColor.style.color = "rgb(0, 255, 0)";
+    wordColor.style.color = "rgba(33, 164, 33, 0.776)";
   }
 });
